@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="second.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What are you interested about a cat?</title>
+</head>
+<body>
+  <!-- <h2 class="head">Navbar on Image</h2> -->
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <a href="#gallery">Gallery</a>
+      <a href="#events">Events</a>
+      <a href="#funfact">Fun Facts</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="head">What you are interested about a lovely cat !</div>
+
+</div>
+  <!-- Gallery Section -->
+
+<div id="gallery">
+  <div class="row">
+    <div class="column">
+      <img class="pic-1" src="nature.jpg" alt="Nature" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img class="pic-2" src="not.jpg" alt="Snow" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img class="pic-3"  src="ton.jpg" alt="Mountains" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img class="pic-4" src="lot.jpg" alt="Lights" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container2">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+    </div>
+    <script src="second.js"></script>
+</body>
+</html>
